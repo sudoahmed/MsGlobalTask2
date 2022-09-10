@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ms_global_task2/screens/chat_screen.dart';
 import 'package:ms_global_task2/screens/pickup_screen.dart';
+import 'package:ms_global_task2/screens/testScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        textTheme: const TextTheme(
+          bodyText2: TextStyle(color: Colors.white),
+        ),
       ),
       routes: {
-        '/': (context) => const PickupScreen(),
+        '/': (context) => const ChatScreen(),
       },
     );
   }
