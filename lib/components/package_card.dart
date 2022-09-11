@@ -66,7 +66,7 @@ class PackageCard extends StatelessWidget {
                 ]),
             child: Image.asset(
               mainImagePath,
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
             ),
           ),
           SizedBox(
@@ -82,9 +82,6 @@ class PackageCard extends StatelessWidget {
                     Text(
                       title,
                       style: const TextStyle(color: Colors.blue, fontSize: 15),
-                    ),
-                    const SizedBox(
-                      width: 18,
                     ),
                     Text(
                       price,
@@ -113,13 +110,22 @@ class PackageCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SmallCard(
-                      cardImage: Image.asset(smallCardImagePath1),
+                      cardImage: Image.asset(
+                        smallCardImagePath1,
+                        fit: BoxFit.contain,
+                      ),
                       cardText: smallCardText1),
                   SmallCard(
-                      cardImage: Image.asset(smallCardImagePath2),
+                      cardImage: Image.asset(
+                        smallCardImagePath2,
+                        fit: BoxFit.contain,
+                      ),
                       cardText: smallCardText2),
                   SmallCard(
-                      cardImage: Image.asset(smallCardImagePath3),
+                      cardImage: Image.asset(
+                        smallCardImagePath3,
+                        fit: BoxFit.contain,
+                      ),
                       cardText: smallCardText3),
                 ],
               )
