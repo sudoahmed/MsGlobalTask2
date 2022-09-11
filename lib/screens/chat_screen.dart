@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ms_global_task2/components/my_sentchat_card.dart';
 import 'package:ms_global_task2/painter/custom_painter.dart';
 
+import '../components/message_sending_area.dart';
 import '../components/other_sentchat_cardblock.dart';
 
 class ChatScreen extends StatelessWidget {
@@ -13,8 +14,10 @@ class ChatScreen extends StatelessWidget {
     final height = MediaQuery.of(context).size.height;
     final width = MediaQuery.of(context).size.width;
     return Scaffold(
+      floatingActionButton: MessageSendingArea(width: width),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       appBar: AppBar(
-        leading: Icon(Icons.arrow_back_outlined),
+        leading: const Icon(Icons.arrow_back_outlined),
         actions: [
           Container(
               margin: const EdgeInsets.symmetric(horizontal: 20),
@@ -27,12 +30,12 @@ class ChatScreen extends StatelessWidget {
             color: Colors.white,
             height: height * 0.87,
             child: CustomPaint(
-              size: Size(720, 1600),
+              size: const Size(720, 1600),
               painter: PathPainter(),
               child: Column(
                 children: [
                   Container(
-                    margin: EdgeInsets.fromLTRB(20, 20, 0, 5),
+                    margin: const EdgeInsets.fromLTRB(20, 20, 0, 5),
                     alignment: Alignment.centerLeft,
                     child: const CircleAvatar(
                       radius: 30,
@@ -45,7 +48,7 @@ class ChatScreen extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.centerLeft,
-                    margin: EdgeInsets.fromLTRB(20, 20, 0, 5),
+                    margin: const EdgeInsets.fromLTRB(20, 20, 0, 5),
                     child: const Text(
                       'Hi There!',
                       style:
@@ -54,14 +57,14 @@ class ChatScreen extends StatelessWidget {
                   ),
                   Container(
                     alignment: Alignment.centerLeft,
-                    margin: EdgeInsets.fromLTRB(20, 10, 0, 5),
+                    margin: const EdgeInsets.fromLTRB(20, 10, 0, 5),
                     child: const Text(
                       'Welcome to Online Service. How can\nwe help you today?',
                       style:
                           TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                     ),
                   ),
-                  SizedBox(height: 140),
+                  const SizedBox(height: 140),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
