@@ -23,7 +23,7 @@ class ChatScreen extends StatelessWidget {
               margin: const EdgeInsets.symmetric(horizontal: 20),
               child: InkWell(
                   onTap: () {
-                    Navigator.pushNamed(context, '/pickup');
+                    Navigator.pushNamed(context, '/package');
                   },
                   child: const Icon(FontAwesomeIcons.bars)))
         ],
@@ -122,6 +122,9 @@ class ChatScreen extends StatelessWidget {
                 messageText:
                     'Of course. Are you interested in\nmonth-to-month or long term',
               ),
+              const SizedBox(
+                height: 70,
+              )
             ],
           )
         ],

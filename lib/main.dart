@@ -22,9 +22,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: {
-        '/': (context) => const PackageScreen(),
+        '/': (context) => const ChatScreen(),
         '/pickup': (context) => const PickupScreen(),
-        // '/package': (context) => const PackageScreen(),
+        '/package': (context) => const PackageScreen(),
       },
     );
   }

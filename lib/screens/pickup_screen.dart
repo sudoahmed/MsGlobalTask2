@@ -68,7 +68,7 @@ class _PickupScreenState extends State<PickupScreen> {
                     DatePickupCard(
                         width: width,
                         upperContainerColor: Colors.white,
-                        upperContainerText: 'Mon',
+                        upperContainerText: 'Sun',
                         lowerContainerText: '27 Jun\nTomorrow',
                         upperContainerTextColor: Colors.black),
                     DatePickupCard(

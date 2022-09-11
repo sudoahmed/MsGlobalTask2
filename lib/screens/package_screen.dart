@@ -21,7 +21,7 @@ class PackageScreen extends StatelessWidget {
           child: Column(
             children: [
               const SizedBox(
-                height: 50,
+                height: 20,
               ),
               PackageCard(
                 height: height,
@@ -121,8 +121,11 @@ class PackageScreen extends StatelessWidget {
       actions: [
         Container(
           margin: EdgeInsets.symmetric(horizontal: 20),
-          child: const InkWell(
+          child: InkWell(
             child: Icon(FontAwesomeIcons.bars),
+            onTap: () {
+              Navigator.pushNamed(context, '/pickup');
+            },
           ),
         )
       ],

@@ -43,7 +43,7 @@ class MessageSendingArea extends StatelessWidget {
                     // filled: true,
                     // fillColor: Colors.white,
                     isDense: true,
-                    hintText: 'This is Hint Text',
+                    hintText: 'Write a reply ...',
                     hintStyle: TextStyle(color: Colors.grey, fontSize: 15),
                   ),
                 ),

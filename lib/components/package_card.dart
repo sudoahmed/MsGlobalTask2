@@ -34,7 +34,7 @@ class PackageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
+      margin: EdgeInsets.symmetric(vertical: 15),
       height: height * 0.26,
       width: double.infinity,
       decoration: BoxDecoration(
