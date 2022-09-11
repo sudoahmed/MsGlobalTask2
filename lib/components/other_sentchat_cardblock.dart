@@ -22,7 +22,10 @@ class OtherSentchatCardBlock extends StatelessWidget {
           Row(
             children: [
               const CircleAvatar(
-                backgroundColor: Colors.blue,
+                backgroundImage: AssetImage(
+                  'assets/images/ahmed.JPG',
+                ),
+                // backgroundColor: Colors.blue,
                 radius: 30,
               ),
               const SizedBox(
