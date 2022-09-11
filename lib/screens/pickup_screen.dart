@@ -280,7 +280,9 @@ class _PickupScreenState extends State<PickupScreen> {
       shadowColor: kDefaulTextColor.withOpacity(0.6),
       shape: Border.all(color: kDefaulTextColor),
       leading: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.pop(context);
+        },
         child: Icon(Icons.arrow_back_outlined),
       ),
       title: const Center(
@@ -290,8 +292,11 @@ class _PickupScreenState extends State<PickupScreen> {
       ),
       actions: [
         Container(
-            margin: EdgeInsets.symmetric(horizontal: 20),
-            child: InkWell(child: Icon(FontAwesomeIcons.bars)))
+          margin: EdgeInsets.symmetric(horizontal: 20),
+          child: InkWell(
+            child: Icon(FontAwesomeIcons.bars),
+          ),
+        )
       ],
     );
   }

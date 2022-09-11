@@ -21,7 +21,11 @@ class ChatScreen extends StatelessWidget {
         actions: [
           Container(
               margin: const EdgeInsets.symmetric(horizontal: 20),
-              child: const Icon(FontAwesomeIcons.bars))
+              child: InkWell(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/pickup');
+                  },
+                  child: const Icon(FontAwesomeIcons.bars)))
         ],
       ),
       body: ListView(

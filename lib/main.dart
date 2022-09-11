@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ms_global_task2/screens/chat_screen.dart';
+import 'package:ms_global_task2/screens/package_screen.dart';
 import 'package:ms_global_task2/screens/pickup_screen.dart';
-import 'package:ms_global_task2/screens/testScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       routes: {
-        '/': (context) => const ChatScreen(),
+        '/': (context) => const PackageScreen(),
+        '/pickup': (context) => const PickupScreen(),
+        // '/package': (context) => const PackageScreen(),
       },
     );
   }
